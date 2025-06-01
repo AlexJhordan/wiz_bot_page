@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-06-01 10:44-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/const/renderSettings.tsx:87
+msgid "Add pitch to the music"
+msgstr "Add pitch to the music"
+
+#: src/const/renderSettings.tsx:60
+msgid "Cursor ripples"
+msgstr "Cursor ripples"
+
+#: src/const/renderSettings.tsx:57
+msgid "Cursor Settings"
+msgstr "Cursor Settings"
+
+#: src/const/renderSettings.tsx:65
+msgid "Cursor size"
+msgstr "Cursor size"
+
+#: src/const/renderSettings.tsx:61
+msgid "Cursor trail"
+msgstr "Cursor trail"
+
+#: src/const/renderSettings.tsx:53
+msgid "Custom ID Skin"
+msgstr "Custom ID Skin"
+
+#: src/const/renderSettings.tsx:71
+#: src/const/renderSettings.tsx:96
+msgid "Draw follow points"
+msgstr "Draw follow points"
+
+#: src/const/renderSettings.tsx:75
+#: src/const/renderSettings.tsx:100
+msgid "Flash to the beat"
+msgstr "Flash to the beat"
+
+#: src/const/renderSettings.tsx:19
+msgid "Gameplay Settings"
+msgstr "Gameplay Settings"
+
+#: src/const/renderSettings.tsx:14
+msgid "General Settings"
+msgstr "General Settings"
+
+#: src/components/OptionsSection.tsx:187
+msgid "If you use o!rdr to make YouTube videos, please credit the website <0>( ordr.issou.best )</0> in the video description!"
+msgstr "If you use o!rdr to make YouTube videos, please credit the website <0>( ordr.issou.best )</0> in the video description!"
+
+#: src/const/renderSettings.tsx:77
+#: src/const/renderSettings.tsx:102
+msgid "Merge sliders"
+msgstr "Merge sliders"
+
+#: src/const/renderSettings.tsx:86
+msgid "Motion blur"
+msgstr "Motion blur"
+
+#: src/const/renderSettings.tsx:90
+msgid "Motion blur FPS"
+msgstr "Motion blur FPS"
+
+#: src/const/renderSettings.tsx:88
+msgid "Never delete the video"
+msgstr "Never delete the video"
+
+#: src/const/renderSettings.tsx:68
+msgid "Objects Settings"
+msgstr "Objects Settings"
+
+#: src/const/renderSettings.tsx:93
+msgid "Other Settings"
+msgstr "Other Settings"
+
+#: src/const/renderSettings.tsx:52
+msgid "Pick a Skin"
+msgstr "Pick a Skin"
+
+#: src/const/renderSettings.tsx:62
+#: src/const/renderSettings.tsx:74
+#: src/const/renderSettings.tsx:99
+msgid "Rainbow"
+msgstr "Rainbow"
+
+#: src/const/renderSettings.tsx:73
+#: src/const/renderSettings.tsx:98
+msgid "Scale to the beat"
+msgstr "Scale to the beat"
+
+#: src/const/renderSettings.tsx:36
+msgid "Show aim error meter"
+msgstr "Show aim error meter"
+
+#: src/const/renderSettings.tsx:30
+msgid "Show avatars on scoreboard"
+msgstr "Show avatars on scoreboard"
+
+#: src/const/renderSettings.tsx:31
+msgid "Show borders"
+msgstr "Show borders"
+
+#: src/const/renderSettings.tsx:26
+msgid "Show combo counter"
+msgstr "Show combo counter"
+
+#: src/const/renderSettings.tsx:72
+#: src/const/renderSettings.tsx:97
+msgid "Show combo numbers"
+msgstr "Show combo numbers"
+
+#: src/const/renderSettings.tsx:34
+msgid "Show hit counter"
+msgstr "Show hit counter"
+
+#: src/const/renderSettings.tsx:22
+msgid "Show hit error meter"
+msgstr "Show hit error meter"
+
+#: src/const/renderSettings.tsx:25
+msgid "Show HP bar"
+msgstr "Show HP bar"
+
+#: src/const/renderSettings.tsx:28
+msgid "Show key overlay"
+msgstr "Show key overlay"
+
+#: src/const/renderSettings.tsx:32
+msgid "Show mods"
+msgstr "Show mods"
+
+#: src/const/renderSettings.tsx:27
+msgid "Show PP counter"
+msgstr "Show PP counter"
+
+#: src/const/renderSettings.tsx:33
+msgid "Show result screen"
+msgstr "Show result screen"
+
+#: src/const/renderSettings.tsx:24
+msgid "Show score"
+msgstr "Show score"
+
+#: src/const/renderSettings.tsx:29
+msgid "Show scoreboard"
+msgstr "Show scoreboard"
+
+#: src/const/renderSettings.tsx:35
+msgid "Show slider breaks"
+msgstr "Show slider breaks"
+
+#: src/const/renderSettings.tsx:37
+msgid "Show strain graph"
+msgstr "Show strain graph"
+
+#: src/const/renderSettings.tsx:23
+msgid "Show unstable rate"
+msgstr "Show unstable rate"
+
+#: src/components/OptionsSection.tsx:57
+msgid "Skin Preview"
+msgstr "Skin Preview"
+
+#: src/const/renderSettings.tsx:41
+msgid "Skin Settings"
+msgstr "Skin Settings"
+
+#: src/const/renderSettings.tsx:78
+#: src/const/renderSettings.tsx:103
+msgid "Slider snaking in"
+msgstr "Slider snaking in"
+
+#: src/const/renderSettings.tsx:79
+#: src/const/renderSettings.tsx:104
+msgid "Slider snaking out"
+msgstr "Slider snaking out"
+
+#: src/components/OptionsSection.tsx:117
+msgid "These options only take effect if \"Use skin cursor\" is not checked."
+msgstr "These options only take effect if \"Use skin cursor\" is not checked."
+
+#: src/const/renderSettings.tsx:63
+msgid "Trail glow"
+msgstr "Trail glow"
+
+#: src/const/renderSettings.tsx:49
+msgid "Use beatmap combo colors"
+msgstr "Use beatmap combo colors"
+
+#: src/const/renderSettings.tsx:76
+#: src/const/renderSettings.tsx:101
+msgid "Use hit circle color"
+msgstr "Use hit circle color"
+
+#: src/const/renderSettings.tsx:48
+msgid "Use skin combo colors"
+msgstr "Use skin combo colors"
+
+#: src/const/renderSettings.tsx:44
+msgid "Use skin cursor"
+msgstr "Use skin cursor"
+
+#: src/const/renderSettings.tsx:45
+msgid "Use skin hitsounds"
+msgstr "Use skin hitsounds"
+
+#: src/const/renderSettings.tsx:83
+msgid "Video Settings"
+msgstr "Video Settings"
+
+#: src/components/OptionsSection.tsx:60
+msgid "Want to record the video with your own skin? Check out the skin uploader over on the Skins page!"
+msgstr "Want to record the video with your own skin? Check out the skin uploader over on the Skins page!"
