@@ -1,4 +1,3 @@
-import { NavigationOptions } from "@/const/navigation"
 import { Button } from "@/components/ui/button"
 
 import { Accordion } from "@/components/ui/accordion"
@@ -11,12 +10,6 @@ import {
   VideoSettings,
 } from "@/components/OptionsSection"
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import {
   Sheet,
   SheetContent,
   SheetDescription,
@@ -24,52 +17,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { IconEdit, IconMenuDeep, IconPlus, IconSettings } from "@tabler/icons-react"
-import { Link } from "react-router-dom"
+import { IconEdit, IconPlus, IconSettings } from "@tabler/icons-react"
 
 export const RenderSettings = () => {
   return (
-    <div className="flex flex-col bg-background h-dvh max-w-[1400px] w-[95dvw] mx-auto gap-8">
-      <header className="flex justify-between w-full px-2 py-4">
-        <Link
-          to="/"
-          className="flex items-center justify-center p-0 hover:bg-accent rounded-full py-2 px-4 transition"
-        >
-          {/* <IconCircleLetterWFilled size={50} /> */}
-          <span className="text-lg font-extrabold whitespace-nowrap">Wiz Botsito</span>
-        </Link>
-        <nav>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild className="md:hidden ml-auto w-fit">
-              <Button variant="ghost" size="icon">
-                <IconMenuDeep />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="rounded-3xl mr-4 p-2" asChild>
-              <ul>
-                {NavigationOptions.map((option, index) => (
-                  <DropdownMenuItem key={index} asChild>
-                    <li className="text-center justify-center">
-                      <Link to={option.href}>{option.label}</Link>
-                    </li>
-                  </DropdownMenuItem>
-                ))}
-              </ul>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          <ul className="gap-4 hidden md:flex">
-            {NavigationOptions.map((option, index) => (
-              <li key={index}>
-                <Button asChild variant="ghost">
-                  <a href={option.href}>{option.label}</a>
-                </Button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
-
+    <>
       <main className="w-full">
         <Sheet>
           <SheetTrigger className="fixed bottom-4 left-4 w-fit" asChild>
@@ -110,6 +62,6 @@ export const RenderSettings = () => {
           © 2025 Wiz. All rights reserved.
         </p>
       </footer>
-    </div>
+    </>
   )
 }
