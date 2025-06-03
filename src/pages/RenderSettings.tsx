@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-
 import { Accordion } from "@/components/ui/accordion"
 import {
   CursorSettings,
@@ -45,7 +44,7 @@ export const RenderSettings = () => {
         <form>
           <Accordion
             type="multiple"
-            className="w-full border p-4 space-y-4 [&>*]:border-b-0 rounded-4xl shadow-lg bg-card"
+            className="w-full border p-4 space-y-4 [&>*]:border-b-0 rounded-4xl shadow-lg bg-card/50 transition-colors"
           >
             <GameplaySettings />
             <SkinSettings />

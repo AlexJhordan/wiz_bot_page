@@ -10,7 +10,15 @@ import { ClientList } from "./pages/ClientList"
 import { Skins } from "./pages/Skins"
 import { Discord } from "./pages/Discord"
 import { Donate } from "./pages/Donate"
+import { useEffect } from "react"
+
 function App() {
+  useEffect(() => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const savedTheme = localStorage.getItem("theme")
+    document.documentElement.classList.add(savedTheme || (prefersDark ? "dark" : "light"))
+  }, [])
+
   return (
     <BrowserRouter>
       <Routes>

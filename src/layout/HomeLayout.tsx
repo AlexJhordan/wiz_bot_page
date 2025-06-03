@@ -1,6 +1,5 @@
 import { NavigationOptions } from "@/const/navigation"
 import { Button } from "@/components/ui/button"
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,11 +9,12 @@ import {
 import { IconMenuDeep } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 import { Outlet } from "react-router-dom"
+import { Test } from "./Test"
 
 export const HomeLayout = () => {
   return (
-    <div className="flex flex-col bg-background h-dvh max-w-[1400px] w-[95dvw] mx-auto gap-8">
-      <header className="flex justify-between w-full px-2 py-4">
+    <div className="flex flex-col bg-background h-dvh max-w-[1400px] w-[95dvw] mx-auto gap-8 py-2 transition-colors">
+      <header className="sticky top-0 bg-background/50 backdrop-blur-md z-50 flex justify-between w-full px-2 py-4 transition-colors">
         <Link
           to="/"
           className="flex items-center justify-center p-0 hover:bg-accent rounded-full py-2 px-4 transition"
@@ -22,7 +22,18 @@ export const HomeLayout = () => {
         >
           <span className="text-lg font-extrabold whitespace-nowrap">Wiz Botsito</span>
         </Link>
-        <nav>
+        <nav className="flex items-center gap-2">
+          <ul className="gap-2 hidden lg:flex">
+            {NavigationOptions.map((option, index) => (
+              <li key={index}>
+                <Button asChild variant="ghost">
+                  <Link to={option.href}>{option.label}</Link>
+                </Button>
+              </li>
+            ))}
+          </ul>
+          <Test />
+
           <DropdownMenu>
             <DropdownMenuTrigger asChild className="lg:hidden ml-auto w-fit">
               <Button variant="ghost" size="icon">
@@ -41,16 +52,6 @@ export const HomeLayout = () => {
               </ul>
             </DropdownMenuContent>
           </DropdownMenu>
-
-          <ul className="gap-4 hidden lg:flex">
-            {NavigationOptions.map((option, index) => (
-              <li key={index}>
-                <Button asChild variant="ghost">
-                  <Link to={option.href}>{option.label}</Link>
-                </Button>
-              </li>
-            ))}
-          </ul>
         </nav>
       </header>
       <Outlet />
