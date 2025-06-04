@@ -43,7 +43,8 @@ export const RenderSettings = () => {
         </Sheet>
         <form>
           <Accordion
-            type="multiple"
+            defaultValue="item-2"
+            type="single"
             className="w-full border p-4 space-y-4 [&>*]:border-b-0 rounded-4xl shadow-lg bg-card/50 transition-colors"
           >
             <GameplaySettings />
