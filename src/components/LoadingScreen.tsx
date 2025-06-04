@@ -22,7 +22,7 @@ export function LoadingScreen() {
     })
 
     createTimer({
-      duration: 300000,
+      duration: 3000,
       onComplete: () => {
         animate(screen.current!.querySelectorAll("span"), {
           opacity: 0,
