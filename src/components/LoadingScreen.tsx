@@ -11,10 +11,10 @@ export function LoadingScreen() {
         { to: "-2.75rem", ease: "outExpo", duration: 500 },
         { to: 0, ease: "outBounce", duration: 800, delay: 100 },
       ],
-      rotate: {
-        from: "-1turn",
-        delay: 0,
-      },
+      // rotate: {
+      //   from: "-1turn",
+      //   delay: 0,
+      // },
       delay: (_, i) => i * 50,
       ease: "inOutCirc",
       loopDelay: 200,
@@ -22,7 +22,7 @@ export function LoadingScreen() {
     })
 
     createTimer({
-      duration: 3000,
+      duration: 300000,
       onComplete: () => {
         animate(screen.current!.querySelectorAll("span"), {
           opacity: 0,
@@ -39,9 +39,8 @@ export function LoadingScreen() {
   return (
     <h2
       ref={screen}
-      className="transition-colors flex items-center justify-center gap-1 text-9xl w-dvw h-dvh fixed top-0 left-0 bg-background z-90 text-center"
+      className="transition-colors flex flex-wrap items-center justify-center gap-1 text-4xl md:text-6xl xl:text-9xl w-dvw h-dvh fixed top-0 left-0 bg-background z-90 text-center"
     >
-      {/* <h2 className="grid place-content-center grid-cols-11 text-9xl w-dvw h-dvh fixed top-0 left-0 bg-background z-90 text-center"> */}
       <span>W</span>
       <span>I</span>
       <span>Z</span>
