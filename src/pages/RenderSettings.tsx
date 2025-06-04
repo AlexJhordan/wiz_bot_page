@@ -18,12 +18,20 @@ import {
 } from "@/components/ui/sheet"
 import { IconEdit, IconPlus, IconSettings } from "@tabler/icons-react"
 import { LoadingScreen } from "@/components/LoadingScreen"
+import { useEffect, useState } from "react"
 
 export const RenderSettings = () => {
-  return <LoadingScreen />
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+  }, [])
 
   return (
     <>
+      {loading && <LoadingScreen />}
       <main className="w-full">
         <Sheet>
           <SheetTrigger className="fixed bottom-4 left-4 w-fit" asChild>
