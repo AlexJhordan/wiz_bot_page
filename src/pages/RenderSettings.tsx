@@ -17,8 +17,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { IconEdit, IconPlus, IconSettings } from "@tabler/icons-react"
+import { LoadingScreen } from "@/components/LoadingScreen"
 
 export const RenderSettings = () => {
+  return <LoadingScreen />
+
   return (
     <>
       <main className="w-full">
